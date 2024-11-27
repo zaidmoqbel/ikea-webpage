@@ -5,7 +5,7 @@
             <v-container fluid>
                 <v-row align="center">
           <v-col cols="2">
-            <img src="@/assets/header-imgs/ikea_logo.png.png" alt="" />
+            <router-link to="/"><img src="@/assets/header-imgs/ikea_logo.png.png" alt="" /></router-link> 
           </v-col>
           <v-col cols="6">
             <div class="position-relative" style="width: 90%;">
@@ -49,8 +49,8 @@
           <v-col cols="4" class="ps-5">
             <div class="parent d-flex justify-space-evenly align-center">
               <div class="login_signup d-flex login-container">
-                <img class="login-icon" src="@/assets/header-imgs/person.png" alt="" style="cursor: pointer;"/>
-                <span style="color: black; cursor: pointer;">Hej! Giriş Yap veya Üye Ol</span>
+                <router-link to="/sign-up"> <img class="login-icon" src="@/assets/header-imgs/person.png" alt="" style="cursor: pointer;"/></router-link>
+                <router-link to="/sign-up" style="color: black; cursor: pointer;text-decoration: none;">Hej! Giriş Yap veya Üye Ol</router-link>
               </div>
               <div class="wishlists d-flex flex-column align-center" style="cursor: pointer;" @click="openCart">
                 <img src="@/assets/header-imgs/heart.png" style="height: 20px; width: 20px;" />

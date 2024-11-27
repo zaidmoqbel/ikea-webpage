@@ -10,7 +10,6 @@
     <YeniUrun />
     <RengaRenk />
     <HizmetLer />
-
   </div>
 </template>
 
